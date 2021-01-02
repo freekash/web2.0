@@ -1,5 +1,8 @@
 const express=require('express');
 const app=express();
+const bodyParser = require('body-parser');
+
+app.use(bodyParser.json());
 //console.log("hello");
 app.post('/',(req,res)=>{
   var email=req.body.email;
