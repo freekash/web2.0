@@ -18,7 +18,8 @@ class App extends React.Component{
       amount :  this.state.amount,
       email : this.state.email
     })
-    console.console.log(resonse);
+    window.location.href = response.data;
+    //console.log(resonse);
   //  alert(this.state.amount);
   }
   render(){
